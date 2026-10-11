@@ -48,7 +48,7 @@
 ---
 
 ## 📜 Informações Gerais
-*   **Desenvolvedor:** BYREDZZZ
+*   **Desenvolvedor:** redzzz
 *   **Linguagem:** Python 3
 *   **Requisito fundamental:** Possuir o Python 3 instalado no sistema operacional.
 
