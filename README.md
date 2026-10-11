@@ -1,21 +1,44 @@
-# Discord Nitro Generator (by BYREDZZZ)
+# ⚡ Discord Nitro Generator (V.2.13)
 
-Este é um script simples em Python para gerar links aleatórios no formato do Discord Nitro.
+```text
+██████╗ ██╗██████╗  ██████╗ ██████╗ ██████╗ ██████╗
+██╔══██╗██║██╔═══╝ ██╔════╝██╔═══██╗██╔══██╗██╔══██╗
+██║  ██║██║╚█████╗ ██║     ██║   ██║██████╔╝██║  ██║
+██║  ██║██║ ╚═══██╗██║     ██║   ██║██╔══██╗██║  ██║
+██████╔╝██║██████╔╝╚██████╗╚██████╔╝██║  ██║██████╔╝
+╚═════╝ ╚═╝╚═════╝  ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝
+          ███╗  ██╗██╗████████╗██████╗  ██████╗
+          ████╗ ██║██║╚══██╔══╝██╔══██╗██╔═══██╗
+          ██╔██╗██║██║   ██║   ██████╔╝██║   ██║
+          ██║╚████║██║   ██║   ██╔══██╗██║   ██║
+          ██║ ╚███║██║   ██║   ██║  ██║╚██████╔╝
+          ╚═╝  ╚══╝╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝
+██████╗ ███████╗███╗  ██╗███████╗██████╗  █████╗ ████████╗██████╗  ██████╗
+██╔═══╝ ██╔════╝████╗ ██║██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██╔═══██╗██╔══██╗
+██║███╗ █████╗  ██╔██╗██║█████╗  ██████╔╝███████║   ██║   ██║   ██║██████╔╝
+██║ ██║ ██╔══╝  ██║╚████║██╔══╝  ██╔══██╗██╔══██║   ██║   ██║   ██║██╔══██╗
+╚██████╗███████╗██║ ╚███║███████╗██║  ██║██║  ██║   ██║   ╚██████╔╝██║  ██║
+ ╚═════╝╚══════╝╚═╝  ╚══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
+     ██████╗ ██╗   ██╗██████╗ ███████╗██████╗ ███████╗███████╗
+     ██╔══██╗╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗╚══███╔╝╚══███╔╝
+     ██████╦╝ ╚████╔╝ ██████╔╝█████╗  ██║  ██║  ███╔╝   ███╔╝
+     ██╔══██╗  ╚██╔╝  ██╔══██╗██╔══╝  ██║  ██║ ███╔╝   ███╔╝
+     ██████╦╝   ██║   ██║  ██║███████╗██████╔╝███████╗███████╗
+     ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚══════╝╚═════╝ ╚══════╝╚══════╝
+```
 
 ---
 
-## 🚀 Como Rodar o Programa
+### 💻 Como Rodar o Script
 
-### 🪟 No Windows
-1. Certifique-se de que o arquivo do Python e o arquivo `.bat` estão na mesma pasta.
-2. Dê **dois cliques** no arquivo `jogar.bat`.
+#### 🪟 No Windows
+1. Guarde o script do Python e o arquivo `.bat` juntos na mesma pasta.
+2. Dê **dois cliques** no arquivo `jogar.bat` para iniciar o terminal.
 
----
+#### 🐧 No Linux (Ubuntu / Mint)
+Configure o inicializador executando estes comandos passo a passo no seu terminal:
 
-### 🐧 No Linux (Ubuntu / Mint)
-Para configurar e rodar o inicializador do Linux pela primeira vez, siga estes passos:
-
-1. Abra o terminal na pasta onde estão os arquivos e cole o comando abaixo (aperte Enter):
+1. **Criar e dar permissão ao inicializador:**
    ```bash
    cat << 'EOF' > "INICIAR Linux"
    #!/bin/bash
@@ -26,9 +49,13 @@ Para configurar e rodar o inicializador do Linux pela primeira vez, siga estes p
    chmod +x "INICIAR Linux"
    ```
 
-2. Pronto! Agora basta dar **dois cliques** no arquivo `INICIAR Linux` na sua pasta e escolher a opção **"Executar no Terminal"**.
+2. **Iniciar o programa:**
+   Dê **dois cliques** no arquivo `INICIAR Linux` criado na sua pasta e escolha a opção **"Executar no Terminal"**.
 
 ---
 
-## ⚠️ Aviso
-Este script gera códigos matematicamente aleatórios. As chances de encontrar um código válido que funcione são praticamente nulas, sendo o projeto voltado apenas para fins de estudo de programação.
+### 📜 Informações Gerais
+* **Desenvolvedor:** BYREDZZZ
+* **Linguagem:** Python 3
+
+⚠️ *Nota: As chances de você encontrar um código válido são baixas.*
