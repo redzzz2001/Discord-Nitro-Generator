@@ -29,7 +29,7 @@
 
 ---
 
-## 💻 Como Rodar o Gerador
+## 💻 Como Usar
 
 ### 🌐 Navegador (Recomendado Uiversal)\
 ## Este funciona em Celular e em todos os sistemas operacionais com navegador
