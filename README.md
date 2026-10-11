@@ -56,3 +56,8 @@
 *   **Requisito fundamental:** Possuir Um navegador instalado no sistema operacional ou Python 3.
 
 ⚠️ *Nota: As chances de encontrar uma combinação ativa e válida são baixas.*
+
+⚠️ *Termos de Uso e Isenção de Responsabilidade*
+Este gerador foi criado estritamente para fins demonstrativos e educacionais. A geração automatizada, distribuição ou tentativa de resgate de códigos promocionais viola diretamente os Termos de Serviço e as Diretrizes da Comunidade do Discord.
+O uso de ferramentas para tentar burlar o sistema de Nitro pode resultar em punições graves, incluindo o banimento permanente da sua conta e o bloqueio do seu endereço de IP pela plataforma.
+Não nos responsabilizamos por eventuais punições, suspensões ou banimentos aplicados às contas ou IPs dos usuários que utilizarem esta ferramenta.
