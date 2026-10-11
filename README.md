@@ -32,13 +32,8 @@
 ## 💻 Como Rodar o Script
 
 ### 🪟 No Windows
-*   **Via Dois Cliques (Rápido):** 
+*  
     Abra a pasta do projeto e dê **dois cliques** diretamente no arquivo `jogar.bat`.
-*   **Via Terminal:** 
-    Abra o Prompt de Comando (CMD) na pasta do arquivo e digite:
-    ```cmd
-    jogar.bat
-    ```
 
 ---
 
@@ -50,17 +45,6 @@
     ```bash
     ./"INICIAR Linux"
     ```
-
-> *Nota: Se você acabou de baixar o repositório no Linux e o inicializador ainda não foi criado, abra o terminal na pasta e gere o inicializador executando:*
-> ```bash
-> cat << 'EOF' > "INICIAR Linux"
-> #!/bin/bash
-> cd "\$(dirname "\$0")"
-> python3 *Nitro*.py
-> read -p "Pressione Enter para fechar..." 
-> EOF
-> chmod +x "INICIAR Linux"
-> ```
 
 ---
 
