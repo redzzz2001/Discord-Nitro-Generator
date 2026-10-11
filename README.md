@@ -42,7 +42,7 @@
 *   **Via Terminal:** 
     Abra o terminal dentro da pasta do projeto e digite o comando abaixo:
     ```bash
-    ./"python3 *Nitro*.py"
+    python3 *Nitro*.py
     ```
 
 ---
