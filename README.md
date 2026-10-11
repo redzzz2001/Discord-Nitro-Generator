@@ -29,7 +29,11 @@
 
 ---
 
-## 💻 Como Rodar o Script
+## 💻 Como Rodar o Gerador
+
+### 🌐 Navegador (Recomendado Uiversal)\
+## Este funciona em Celular e em todos os sistemas operacionais com navegador
+*   Abra a pasta do projeto e dê **dois cliques** diretamente no arquivo `Index.html`.
 
 ### 🪟 No Windows
 *   Abra a pasta do projeto e dê **dois cliques** diretamente no arquivo `jogar.bat`.
@@ -49,7 +53,6 @@
 
 ## 📜 Informações Gerais
 *   **Desenvolvedor:** redzzz
-*   **Linguagem:** Python 3
-*   **Requisito fundamental:** Possuir o Python 3 instalado no sistema operacional.
+*   **Requisito fundamental:** Possuir Um navegador instalado no sistema operacional ou Python 3.
 
 ⚠️ *Nota: As chances de encontrar uma combinação ativa e válida são baixas.*
