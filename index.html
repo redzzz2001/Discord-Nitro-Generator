@@ -1,266 +1,274 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Nitro Generator</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'GG Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: #313338;
-            color: #dbdee1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-        .container {
-            background-color: #2b2d31;
-            width: 100%;
-            max-width: 550px;
-            border-radius: 12px;
-            padding: 24px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .header h1 {
-            color: #f2f3f5;
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 4px;
-        }
-        .header p {
-            color: #949ba4;
-            font-size: 14px;
-        }
-        .aviso-box {
-            background-color: rgba(242, 63, 66, 0.1);
-            border: 1px solid #f23f43;
-            border-radius: 8px;
-            padding: 12px 16px;
-            margin-bottom: 20px;
-        }
-        .aviso-title {
-            color: #f23f43;
-            font-size: 13px;
-            font-weight: 700;
-            text-transform: uppercase;
-            margin-bottom: 4px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .aviso-text {
-            color: #dbdee1;
-            font-size: 13px;
-            line-height: 1.5;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            display: block;
-            color: #b5bac1;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
-        .input-row {
-            display: flex;
-            gap: 12px;
-        }
-        input[type="number"] {
-            flex: 1;
-            background-color: #1e1f22;
-            border: none;
-            border-radius: 4px;
-            color: #f2f3f5;
-            padding: 10px;
-            font-size: 16px;
-            outline: none;
-        }
-        button {
-            background-color: #5865f2;
-            color: #ffffff;
-            border: none;
-            border-radius: 4px;
-            padding: 10px 24px;
-            font-size: 14px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-        button:hover {
-            background-color: #4752c4;
-        }
-        .resultados-wrapper {
-            background-color: #1e1f22;
-            border-radius: 8px;
-            padding: 16px;
-        }
-        .resultados-title {
-            color: #b5bac1;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-        }
-        .resultados-lista {
-            max-height: 220px;
-            overflow-y: auto;
-            padding-right: 4px;
-        }
-        .resultados-lista::-webkit-scrollbar {
-            width: 6px;
-        }
-        .resultados-lista::-webkit-scrollbar-thumb {
-            background: #2b2d31;
-            border-radius: 4px;
-        }
-        .item-codigo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #2b2d31;
-            padding: 8px 12px;
-            border-radius: 4px;
-            margin-bottom: 8px;
-        }
-        .item-codigo:last-child {
-            margin-bottom: 0;
-        }
-        .link-codigo {
-            color: #00a8fc;
-            text-decoration: none;
-            font-size: 14px;
-            font-family: monospace;
-            word-break: break-all;
-        }
-        .link-codigo:hover {
-            text-decoration: underline;
-        }
-        .btn-copiar {
-            background-color: #23a55a;
-            padding: 6px 12px;
-            font-size: 12px;
-        }
-        .btn-copiar:hover {
-            background-color: #1a7f43;
-        }
-        .status-msg {
-            color: #949ba4;
-            font-size: 14px;
-            text-align: center;
-            padding: 20px 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#15161a">
+  <meta name="description" content="Gerador demonstrativo de códigos aleatórios no formato de links Discord Nitro.">
+  <title>Redzzz • Nitro Generator</title>
+  <style>
+    :root{color-scheme:dark;--bg:#111216;--panel:#1b1c22;--panel2:#22242c;--line:#30323d;--text:#f4f5f8;--muted:#a4a7b4;--red:#ed4245;--red2:#c9343b;--green:#35c982}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% -15%,#492026 0,transparent 45%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:28px 16px 40px}
+    button,input{font:inherit}
+    button{cursor:pointer}
+    .shell{width:min(100%,760px);margin:0 auto}
+    .top{display:flex;align-items:center;gap:12px;margin:0 0 26px}
+    .logo{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:linear-gradient(145deg,#ff5b60,var(--red2));font-size:21px;font-weight:900;box-shadow:0 8px 28px #ed424533}
+    .brand{font-weight:800;letter-spacing:.2px}.brand small{display:block;color:var(--muted);font-size:12px;font-weight:500;margin-top:3px}
+    .pill{margin-left:auto;border:1px solid #3d3f49;border-radius:999px;padding:7px 10px;color:#c4c6d0;font-size:11px;letter-spacing:.8px}
+    .hero{text-align:center;margin:26px auto 24px}
+    .eyebrow{color:#ff777b;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+    h1{font-size:clamp(30px,6vw,46px);letter-spacing:-1.8px;line-height:1.08;margin:12px 0}
+    .hero p{color:var(--muted);line-height:1.6;font-size:14px;max-width:480px;margin:0 auto}
+    .card{background:linear-gradient(180deg,#1d1e25,#191a20);border:1px solid var(--line);border-radius:20px;padding:clamp(18px,4vw,28px);box-shadow:0 22px 70px #0005}
+    .notice{display:flex;gap:12px;align-items:flex-start;padding:14px;border:1px solid #654045;background:#321f24;border-radius:12px;margin-bottom:24px}
+    .notice-icon{font-size:18px;line-height:1.3}.notice strong{display:block;font-size:13px;margin-bottom:4px;color:#ffb6b8}.notice p{margin:0;color:#d9bfc2;font-size:12px;line-height:1.55}
+    .section-label{display:block;font-size:12px;font-weight:750;color:#d7d8e0;margin-bottom:10px}
+    .controls{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end}
+    .field{min-width:0}.input-wrap{position:relative}
+    input{width:100%;background:#111217;border:1px solid #373944;border-radius:10px;color:var(--text);padding:13px 14px;outline:none;transition:border .18s,box-shadow .18s}
+    input:focus{border-color:#ed4245;box-shadow:0 0 0 3px #ed424522}
+    .hint{font-size:11px;color:#858896;margin-top:8px}
+    .btn{border:0;border-radius:10px;padding:13px 18px;font-weight:750;transition:transform .15s,filter .15s}
+    .btn:hover{filter:brightness(1.09)}.btn:active{transform:scale(.98)}
+    .primary{background:linear-gradient(135deg,#f04b50,#c8323a);color:white;box-shadow:0 7px 20px #ed424526}
+    .secondary{background:#2a2c35;border:1px solid #3a3c47;color:#f0f1f5}
+    .btn:focus-visible{outline:2px solid white;outline-offset:3px}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0}
+    .stat{padding:13px 14px;border:1px solid var(--line);background:#17181e;border-radius:12px;min-width:0}
+    .stat span{display:block;color:var(--muted);font-size:11px;margin-bottom:7px}
+    .stat strong{font-size:20px;letter-spacing:-.4px}
+    .results-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:24px 0 12px}
+    .results-head h2{font-size:14px;margin:0}
+    .count{font-size:11px;color:var(--muted)}
+    .actions{display:flex;gap:8px;flex-wrap:wrap}
+    .actions .btn{padding:9px 12px;font-size:12px}
+    .results{display:grid;gap:8px;max-height:340px;overflow:auto;padding-right:3px}
+    .empty{border:1px dashed #3a3c47;border-radius:12px;padding:30px 14px;text-align:center;color:var(--muted);font-size:13px;line-height:1.6}
+    .empty .symbol{font-size:26px;display:block;margin-bottom:8px}
+    .code-row{display:flex;align-items:center;gap:10px;padding:10px 11px;background:#15161b;border:1px solid #2d2f38;border-radius:10px;min-width:0}
+    .code-number{font-size:10px;color:#777b8a;min-width:22px}
+    .code-link{color:#f2a1a3;text-decoration:none;font:12px ui-monospace,SFMono-Regular,Menlo,monospace;overflow-wrap:anywhere;min-width:0;flex:1}
+    .code-link:hover{text-decoration:underline}
+    .copy{flex-shrink:0;background:#2a2c35;border:1px solid #41434e;color:#e7e8ed;border-radius:7px;padding:7px 9px;font-size:11px}
+    .copy.done{color:#83e3b5;border-color:#286c4d}
+    .footer{text-align:center;color:#777b88;font-size:11px;line-height:1.7;margin-top:20px}
+    .toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#252730;border:1px solid #454753;color:#fff;padding:11px 16px;border-radius:10px;font-size:12px;box-shadow:0 10px 35px #0007;transition:.2s;max-width:calc(100% - 32px);text-align:center}
+    .toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:520px){body{padding:18px 12px 30px}.top{margin-bottom:20px}.pill{font-size:9px;padding:6px 8px}.controls{grid-template-columns:1fr}.controls .btn{width:100%}.stats{gap:7px}.stat{padding:11px 9px}.stat strong{font-size:18px}.stat span{font-size:10px}.results-head{align-items:flex-start;flex-direction:column}.code-row{gap:7px}.code-link{font-size:11px}.copy{padding:7px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
+  </style>
 </head>
 <body>
+  <main class="shell">
+    <header class="top">
+      <div class="logo" aria-hidden="true">R</div>
+      <div class="brand">redzzz<span style="color:var(--red)">.</span><small>Community tools</small></div>
+      <div class="pill">WEB TOOL · V2.14</div>
+    </header>
 
-<div class="container">
-    <div class="header">
-        <h1>Nitro Generator</h1>
-        <p>Byredzzz • V.2.13</p>
-    </div>
+    <section class="hero">
+      <div class="eyebrow">Projeto experimental</div>
+      <h1>Nitro <span style="color:var(--red)">Generator</span></h1>
+      <p>Gere strings aleatórias no formato de links de presente para testar a interface. Sem truques mágicos, porque a internet infelizmente não funciona assim.</p>
+    </section>
 
-    <div class="aviso-box">
-        <div class="aviso-title">⚠️ Aviso Importante</div>
-        <div class="aviso-text">A maioria dos códigos vai dar expirado. Pode demorar até você encontrar um código válido.</div>
-    </div>
+    <section class="card" aria-label="Gerador demonstrativo">
+      <div class="notice" role="note">
+        <div class="notice-icon" aria-hidden="true">⚠️</div>
+        <div><strong>Importante: demonstração</strong><p>Os resultados são aleatórios e não são códigos Nitro reais. Esta página não verifica, resgata nem cria assinaturas do Discord. Não existe garantia de encontrar um código válido.</p></div>
+      </div>
 
-    <div class="form-group">
-        <label for="quantidade">Quantidade de códigos</label>
-        <div class="input-row">
-            <input type="number" id="quantidade" value="10" min="1">
-            <button onclick="iniciarGerador()">Gerar</button>
+      <div class="controls">
+        <div class="field">
+          <label class="section-label" for="quantidade">Quantidade de resultados</label>
+          <div class="input-wrap"><input id="quantidade" type="number" value="10" min="1" max="100" inputmode="numeric" aria-describedby="quantidade-hint"></div>
+          <div class="hint" id="quantidade-hint">Escolha entre 1 e 100 itens por geração.</div>
         </div>
-    </div>
+        <button class="btn primary" id="gerar" type="button">✦ Gerar códigos</button>
+      </div>
 
-    <div class="resultados-wrapper">
-        <div class="resultados-title" id="painel-status">Codigos nitro</div>
-        <div class="resultados-lista" id="output">
-            <div class="status-msg">Os codigos vao aparecer aqui</div>
+      <div class="stats" aria-live="polite">
+        <div class="stat"><span>Gerados nesta sessão</span><strong id="total">0</strong></div>
+        <div class="stat"><span>Última geração</span><strong id="ultima">--</strong></div>
+        <div class="stat"><span>Status</span><strong id="status" style="font-size:15px;color:var(--green)">Pronto</strong></div>
+      </div>
+
+      <div class="results-head">
+        <div><h2>Resultados</h2><div class="count" id="contador">Nenhum resultado ainda</div></div>
+        <div class="actions">
+          <button class="btn secondary" id="copiar-todos" type="button" disabled>Copiar lista</button>
+          <button class="btn secondary" id="baixar" type="button" disabled>Baixar .txt</button>
+          <button class="btn secondary" id="limpar" type="button" disabled>Limpar</button>
         </div>
-    </div>
-</div>
+      </div>
 
-<!-- Input oculto para corrigir o bug de cópia do OneCompiler -->
-<textarea id="copiar-helper" style="position: absolute; left: -9999px;"></textarea>
+      <div class="results" id="output" aria-live="polite" aria-label="Lista de resultados">
+        <div class="empty"><span class="symbol" aria-hidden="true">⌁</span>Seus resultados aparecem aqui.<br>Clique em <strong>Gerar códigos</strong> para começar.</div>
+      </div>
+    </section>
 
-<script>
-    function gerarNitro(comprimento) {
-        if (!comprimento) comprimento = 16;
-        var caracteres = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-        var codigo = '';
-        for (var i = 0; i < comprimento; i++) {
-            var indexAleatorio = Math.floor(Math.random() * caracteres.length);
-            codigo += caracteres.charAt(indexAleatorio);
+    <footer class="footer">Feito por Redzzz · V2.14<br>Ferramenta demonstrativa. Links gerados não representam presentes válidos.</footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    (() => {
+      const input = document.getElementById('quantidade');
+      const output = document.getElementById('output');
+      const totalEl = document.getElementById('total');
+      const ultimaEl = document.getElementById('ultima');
+      const statusEl = document.getElementById('status');
+      const contadorEl = document.getElementById('contador');
+      const copiarTodos = document.getElementById('copiar-todos');
+      const baixar = document.getElementById('baixar');
+      const limpar = document.getElementById('limpar');
+      const gerarBtn = document.getElementById('gerar');
+      const toast = document.getElementById('toast');
+      let links = [];
+      let totalGerado = 0;
+      let toastTimer;
+
+      function avisar(mensagem) {
+        toast.textContent = mensagem;
+        toast.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => toast.classList.remove('show'), 2300);
+      }
+
+      function gerarCodigo(tamanho = 16) {
+        const caracteres = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        const valores = new Uint32Array(tamanho);
+        if (window.crypto && window.crypto.getRandomValues) {
+          window.crypto.getRandomValues(valores);
+          return Array.from(valores, n => caracteres[n % caracteres.length]).join('');
         }
-        return 'https://discord.gift/' + codigo;
-    }
+        return Array.from({length: tamanho}, () => caracteres[Math.floor(Math.random() * caracteres.length)]).join('');
+      }
 
-    function copiarTexto(texto, botao) {
-        // Método alternativo e robusto para funcionar dentro do iframe do OneCompiler
-        var helper = document.getElementById('copiar-helper');
-        helper.value = texto;
-        helper.select();
-        helper.setSelectionRange(0, 99999);
-        
+      async function copiar(texto) {
         try {
-            document.execCommand('copy');
-            var textoOriginal = botao.innerText;
-            botao.innerText = 'Copiado!';
-            botao.style.backgroundColor = '#1a7f43';
-            setTimeout(function() {
-                botao.innerText = textoOriginal;
-                botao.style.backgroundColor = '#23a55a';
-            }, 1500);
-        } catch (err) {
-            botao.innerText = 'Erro';
-            botao.style.backgroundColor = '#f23f43';
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(texto);
+          } else {
+            const area = document.createElement('textarea');
+            area.value = texto;
+            area.style.position = 'fixed';
+            area.style.opacity = '0';
+            document.body.appendChild(area);
+            area.select();
+            const ok = document.execCommand('copy');
+            area.remove();
+            if (!ok) throw new Error('Cópia indisponível');
+          }
+          return true;
+        } catch {
+          avisar('Não foi possível copiar automaticamente. Tente selecionar o texto.');
+          return false;
         }
-    }
+      }
 
-    function iniciarGerador() {
-        var inputQuantidade = document.getElementById('quantidade');
-        var outputDiv = document.getElementById('output');
-        var statusPainel = document.getElementById('painel-status');
-        var quantidade = parseInt(inputQuantidade.value);
+      function atualizarAcoes() {
+        const ativo = links.length > 0;
+        copiarTodos.disabled = !ativo;
+        baixar.disabled = !ativo;
+        limpar.disabled = !ativo;
+      }
 
-        if (isNaN(quantidade) || quantidade <= 0) {
-            outputDiv.innerHTML = '<div class="status-msg" style="color: #f23f43;">Insira um número válido maior que zero.</div>';
-            return;
+      function renderizar() {
+        output.replaceChildren();
+        if (!links.length) {
+          const empty = document.createElement('div');
+          empty.className = 'empty';
+          empty.textContent = 'Lista limpa. Gere novos resultados quando quiser.';
+          output.appendChild(empty);
+          contadorEl.textContent = 'Nenhum resultado ainda';
+          atualizarAcoes();
+          return;
         }
-
-        outputDiv.innerHTML = '<div class="status-msg">Iniciando gerador de códigos...</div>';
-        statusPainel.innerText = 'Processando...';
-        
-        setTimeout(function() {
-            statusPainel.innerText = 'Códigos Gerados (' + quantidade + ')';
-            outputDiv.innerHTML = '';
-            
-            for (var i = 0; i < quantidade; i++) {
-                var link = gerarNitro(16);
-                
-                outputDiv.innerHTML += 
-                    '<div class="item-codigo">' +
-                        '<a href="' + link + '" target="_blank" class="link-codigo">' + link + '</a>' +
-                        '<button class="btn-copiar" onclick="copiarTexto(\'' + link + '\', this)">Copiar</button>' +
-                    '</div>';
+        const fragment = document.createDocumentFragment();
+        links.forEach((link, i) => {
+          const row = document.createElement('div');
+          row.className = 'code-row';
+          const number = document.createElement('span');
+          number.className = 'code-number';
+          number.textContent = String(i + 1).padStart(2, '0');
+          const anchor = document.createElement('a');
+          anchor.className = 'code-link';
+          anchor.href = link;
+          anchor.target = '_blank';
+          anchor.rel = 'noopener noreferrer';
+          anchor.textContent = link;
+          anchor.title = 'Link aleatório demonstrativo, não validado';
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'copy';
+          btn.textContent = 'Copiar';
+          btn.addEventListener('click', async () => {
+            if (await copiar(link)) {
+              btn.textContent = 'Copiado ✓';
+              btn.classList.add('done');
+              setTimeout(() => { btn.textContent = 'Copiar'; btn.classList.remove('done'); }, 1500);
             }
-        }, 500);
-    }
-</script>
+          });
+          row.append(number, anchor, btn);
+          fragment.appendChild(row);
+        });
+        output.appendChild(fragment);
+        contadorEl.textContent = links.length + (links.length === 1 ? ' resultado nesta lista' : ' resultados nesta lista');
+        atualizarAcoes();
+      }
 
+      function iniciarGerador() {
+        const quantidade = Number(input.value);
+        if (!Number.isInteger(quantidade) || quantidade < 1 || quantidade > 100) {
+          input.setAttribute('aria-invalid', 'true');
+          avisar('Digite uma quantidade inteira entre 1 e 100.');
+          input.focus();
+          return;
+        }
+        input.removeAttribute('aria-invalid');
+        gerarBtn.disabled = true;
+        gerarBtn.textContent = 'Gerando…';
+        statusEl.textContent = 'Gerando';
+        statusEl.style.color = '#f0c674';
+        setTimeout(() => {
+          links = Array.from({length: quantidade}, () => 'https://discord.gift/' + gerarCodigo(16));
+          totalGerado += quantidade;
+          totalEl.textContent = totalGerado.toLocaleString('pt-BR');
+          ultimaEl.textContent = quantidade.toLocaleString('pt-BR');
+          statusEl.textContent = 'Concluído';
+          statusEl.style.color = 'var(--green)';
+          renderizar();
+          gerarBtn.disabled = false;
+          gerarBtn.textContent = '✦ Gerar códigos';
+        }, 120);
+      }
+
+      gerarBtn.addEventListener('click', iniciarGerador);
+      input.addEventListener('keydown', e => { if (e.key === 'Enter') iniciarGerador(); });
+      copiarTodos.addEventListener('click', async () => {
+        if (await copiar(links.join('\n'))) avisar('Lista copiada para a área de transferência.');
+      });
+      baixar.addEventListener('click', () => {
+        const blob = new Blob([links.join('\n') + '\n'], {type: 'text/plain;charset=utf-8'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'redzzz-codigos-demonstracao.txt';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+        avisar('Arquivo de demonstração preparado.');
+      });
+      limpar.addEventListener('click', () => {
+        links = [];
+        renderizar();
+        avisar('Lista limpa.');
+      });
+    })();
+  </script>
 </body>
 </html>
