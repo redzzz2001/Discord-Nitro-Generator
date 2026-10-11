@@ -32,8 +32,7 @@
 ## 💻 Como Rodar o Script
 
 ### 🪟 No Windows
-*  
-    Abra a pasta do projeto e dê **dois cliques** diretamente no arquivo `jogar.bat`.
+*   Abra a pasta do projeto e dê **dois cliques** diretamente no arquivo `jogar.bat`.
 
 ---
 
@@ -43,7 +42,7 @@
 *   **Via Terminal:** 
     Abra o terminal dentro da pasta do projeto e digite o comando abaixo:
     ```bash
-    ./"INICIAR Linux"
+    ./"python3 *Nitro*.py"
     ```
 
 ---
